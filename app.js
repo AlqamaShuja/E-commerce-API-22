@@ -27,7 +27,7 @@ app.use(api + '/products', productsRoutes)
 app.use(api + '/categories', categoryRoutes)
 app.use(`${api}/users`, usersRoutes);
 app.use(`${api}/orders`, ordersRoutes);
-
+app.use("/public/uploads", express.static(__dirname + "/public/uploads"));
 
 
 //Database
